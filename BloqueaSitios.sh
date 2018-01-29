@@ -1,4 +1,4 @@
-sudo perl -pi -e 'if(/jhbsscripts/){undef $_}' /etc/hosts
+cd ~ && sudo perl -pi -e 'if(/jhbsscripts/){undef $_}' /etc/hosts
 archivo='/etc/hosts'
 hosts=$(cat $archivo)
 lista='
@@ -122,7 +122,7 @@ lista='
 0 zoxzz.exclusiverewards.huuj.info #jhbsscripts'
 union=$(echo "$hosts" "$lista")
 echo "$union" > hosts
-sudo cp hosts /etc/hosts
+sudo cp hosts /etc/hosts && rm -rf hosts
 sudo killall -HUP mDNSResponder
 clear && echo "BloqueaSitios.sh ha finalizado con exito,  se recomienda borrar la caché del navegador."
 echo
