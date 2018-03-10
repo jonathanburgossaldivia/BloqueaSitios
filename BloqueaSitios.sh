@@ -2,6 +2,13 @@ cd ~ && sudo perl -pi -e 'if(/jhbsscripts/){undef $_}' /etc/hosts
 archivo='/etc/hosts'
 hosts=$(cat $archivo)
 lista='
+0 www2.nevova.club #jhbsscripts
+0 www1.palhet.pw #jhbsscripts
+0 palhet.pw #jhbsscripts
+0 www1.gasger.space #jhbsscripts
+0 bughokk.win #jhbsscripts
+0 adexchangeguru.com #jhbsscripts
+0 crrepo.com #jhbsscripts
 0 147630.monetizer.site  #jhbsscripts
 0 192.168.cdn11.contentabc.com #jhbsscripts
 0 247gamerz.com #jhbsscripts
